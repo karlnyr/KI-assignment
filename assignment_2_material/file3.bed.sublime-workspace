@@ -1,0 +1,1049 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"merg",
+				"merge_from"
+			],
+			[
+				"dirr",
+				"dirr_2"
+			],
+			[
+				"BIN_",
+				"BIN_REFINEMENT"
+			],
+			[
+				"CO",
+				"COMPLETION"
+			],
+			[
+				"BIN",
+				"BIN_STRING"
+			],
+			[
+				"spl",
+				"split_line\tunknown ⟠"
+			],
+			[
+				"G",
+				"GFF_FILE"
+			],
+			[
+				"co",
+				"CONTINUE_DIR"
+			],
+			[
+				"pro",
+				"protein"
+			],
+			[
+				"sm",
+				"sm_dict"
+			],
+			[
+				"summ",
+				"summary_macsy"
+			],
+			[
+				"protin",
+				"protein_dict"
+			],
+			[
+				"su",
+				"summary_macsy"
+			],
+			[
+				"pr",
+				"protein_dict"
+			],
+			[
+				"lo",
+				"locus\tstr ⟠"
+			],
+			[
+				"re",
+				"readline\tfunction ⟠"
+			],
+			[
+				"rea",
+				"readline\tfunction ⟠"
+			],
+			[
+				"str",
+				"string\tunknown ⟠"
+			],
+			[
+				"mac",
+				"macsyfinder"
+			],
+			[
+				"ex",
+				"EXTR_G"
+			],
+			[
+				"BED",
+				"BED_DIR"
+			],
+			[
+				"ou",
+				"OUTDIR"
+			],
+			[
+				"conti",
+				"contig_dict\tdict | list ⟠"
+			],
+			[
+				"tmp",
+				"tmp_contig\tcontig ⟠"
+			],
+			[
+				"gl",
+				"g_line\tstr ⟠"
+			],
+			[
+				"cont",
+				"cont_name"
+			],
+			[
+				"meta",
+				"metabat2"
+			],
+			[
+				"mapped",
+				"mapped_contigs"
+			],
+			[
+				"ma",
+				"MAKEBLASTDB_PATH"
+			],
+			[
+				"inp",
+				"INPUT_FA"
+			],
+			[
+				"IN",
+				"INPUT_DIR"
+			],
+			[
+				"HMM",
+				"HMM_EXT"
+			],
+			[
+				"order",
+				"ordered_replicon"
+			],
+			[
+				"f",
+				"file_p"
+			],
+			[
+				"MR",
+				"mr_cons_BS"
+			],
+			[
+				"AL",
+				"ALIGNMENT_FILE_PATH"
+			],
+			[
+				"bh",
+				"bh_set"
+			],
+			[
+				"par",
+				"partition_aln"
+			],
+			[
+				"bh_",
+				"bh_chunks"
+			],
+			[
+				"chunk",
+				"chunkIt"
+			],
+			[
+				"lis",
+				"list_f"
+			],
+			[
+				"chun",
+				"chunkIt"
+			],
+			[
+				"no",
+				"nominator"
+			],
+			[
+				"list",
+				"list"
+			],
+			[
+				"perc",
+				"perc_id_cutof"
+			],
+			[
+				"be",
+				"before"
+			],
+			[
+				"out",
+				"out_list"
+			],
+			[
+				"clu",
+				"cluster_count"
+			],
+			[
+				"work",
+				"working_list"
+			],
+			[
+				"wo",
+				"working_list"
+			],
+			[
+				"wor",
+				"working_list"
+			],
+			[
+				"not",
+				"not_changing"
+			],
+			[
+				"blas",
+				"blast_item"
+			],
+			[
+				"id",
+				"id_match"
+			],
+			[
+				"filte",
+				"filtered_aln"
+			],
+			[
+				"Scr",
+				"SCRIPT_PATH"
+			],
+			[
+				"blast",
+				"blast_item"
+			],
+			[
+				"per",
+				"perc_id_cutof"
+			],
+			[
+				"scr",
+				"scrambled_list"
+			],
+			[
+				"name",
+				"name_tuple"
+			],
+			[
+				"ite",
+				"item_set"
+			],
+			[
+				"t",
+				"tuple_set"
+			],
+			[
+				"cha",
+				"changing"
+			],
+			[
+				"item",
+				"item_list"
+			],
+			[
+				"st",
+				"still_changing"
+			],
+			[
+				"remo",
+				"remove_blast_hit"
+			],
+			[
+				"app",
+				"app_item"
+			],
+			[
+				"same",
+				"same_sequences"
+			],
+			[
+				"bla",
+				"blast_hit"
+			],
+			[
+				"sa",
+				"same_sequences"
+			],
+			[
+				"bl",
+				"blast_item"
+			],
+			[
+				"seq",
+				"seq_check"
+			],
+			[
+				"al",
+				"alignment"
+			],
+			[
+				"fi",
+				"filtered_aln"
+			],
+			[
+				"red",
+				"reduce_list"
+			],
+			[
+				"def",
+				"defaultdict"
+			],
+			[
+				"one",
+				"one_time"
+			],
+			[
+				"two",
+				"two_times"
+			],
+			[
+				"on",
+				"one_time"
+			],
+			[
+				"pa",
+				"pairs"
+			],
+			[
+				"cl",
+				"clustered_seqs"
+			],
+			[
+				"cluster",
+				"cluster"
+			],
+			[
+				"ke",
+				"key_value_dict"
+			],
+			[
+				"key",
+				"key_value_dict"
+			],
+			[
+				"is",
+				"is_value"
+			],
+			[
+				"key_",
+				"key_1"
+			],
+			[
+				"di",
+				"dictionary"
+			],
+			[
+				"dic",
+				"dictionary"
+			],
+			[
+				"mat",
+				"match_flag"
+			],
+			[
+				"fast",
+				"fasta_12"
+			],
+			[
+				"dict",
+				"dictionary"
+			],
+			[
+				"ret",
+				"return_dict"
+			],
+			[
+				"k",
+				"key_2"
+			],
+			[
+				"val",
+				"value_dict"
+			],
+			[
+				"d",
+				"dictionary"
+			],
+			[
+				"comb",
+				"comb_flag"
+			],
+			[
+				"com",
+				"combinations"
+			],
+			[
+				"fasta",
+				"fasta_3"
+			],
+			[
+				"parse",
+				"parse_n_blastn"
+			],
+			[
+				"grou",
+				"group_by_seq_identity"
+			],
+			[
+				"gr",
+				"grouping"
+			],
+			[
+				"ali",
+				"alignment_file"
+			],
+			[
+				"aln",
+				"aln_split"
+			],
+			[
+				"cluste",
+				"cluster_dict"
+			],
+			[
+				"c",
+				"current_wd"
+			],
+			[
+				"sub",
+				"subject"
+			],
+			[
+				"subj",
+				"subject_flag"
+			],
+			[
+				"std",
+				"stdout"
+			],
+			[
+				"ls",
+				"ls_out"
+			],
+			[
+				"NC",
+				"NcbiblastnCommandline"
+			],
+			[
+				"seq_",
+				"seq_handle"
+			],
+			[
+				"_",
+				"_tmp"
+			],
+			[
+				"Alig",
+				"AlignIO"
+			],
+			[
+				"kb",
+				"kb_flanks"
+			],
+			[
+				"extr",
+				"extract_substring"
+			],
+			[
+				"rev",
+				"reverse_string"
+			],
+			[
+				"reve",
+				"reverse"
+			],
+			[
+				"max",
+				"maximum"
+			],
+			[
+				"fas",
+				"fasta_file"
+			],
+			[
+				"lin",
+				"line"
+			],
+			[
+				"start",
+				"start_flag"
+			],
+			[
+				"proc",
+				"procs"
+			],
+			[
+				"li",
+				"line"
+			],
+			[
+				"line",
+				"line_pos"
+			],
+			[
+				"blast_",
+				"blast_entry"
+			],
+			[
+				"chec",
+				"check_reversed"
+			],
+			[
+				"min",
+				"min_range"
+			],
+			[
+				"a_",
+				"a_tid"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"pul",
+				"Git: Pull"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"pull",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"ad",
+				"Git: Add All"
+			],
+			[
+				"gpul",
+				"Git: Pull"
+			],
+			[
+				"gp",
+				"Git: Pull"
+			],
+			[
+				"gc",
+				"Git: Commit"
+			],
+			[
+				"ga",
+				"Git: Add All"
+			],
+			[
+				"gpl",
+				"Git: Pull"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"cmmi",
+				"Git: Commit"
+			],
+			[
+				"ommi",
+				"Git: Commit"
+			],
+			[
+				"Push",
+				"Git: Push"
+			],
+			[
+				"git ad",
+				"Git: Add All"
+			],
+			[
+				"pu",
+				"Git: Pull"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"prv re",
+				"Package Control: Remove Package"
+			],
+			[
+				"prv upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pr",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"cmmit",
+				"Git: Commit"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"addls",
+				"Git: Add Selected Hunk"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"pando",
+				"Build With: pandoc.md2pdf"
+			],
+			[
+				"lsp:",
+				"LSP: Disable Language Server Globally"
+			],
+			[
+				"LSP: en",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"commi\t",
+				"Git: Commit"
+			],
+			[
+				"comm\t",
+				"Git: Commit"
+			],
+			[
+				"co",
+				"Git: Commit"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"MLP:",
+				"MarkdownLivePreview: Edit Current File"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"HTML pre",
+				"Markdown Preview: Export HTML in Sublime Text"
+			],
+			[
+				"mlp",
+				"MarkdownLivePreview: Edit Current File"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"A File Icon: Clean Patches"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				" git: push",
+				"Git: Push"
+			],
+			[
+				"git: push",
+				"Git: Push"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git: stat",
+				"Git: Status"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 299.0,
+		"history":
+		[
+			"asd",
+			"import math",
+			"exit",
+			"print(sys.executable)",
+			"import sys",
+			"python --version",
+			"python --verison",
+			"Flake8 --version"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/README.md",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/13_imbim_blobology.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt.wiki/Legionellales-and-Francisella-=-1?.md",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/09_add_contig_ID.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/08_fasta_cropper.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/04_extract_genes_hmm.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/01_macsyfinder.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/07_assemble_megahit.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/setup.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/12_metawrap_bin_refinement.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/05_macsy2bed.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/16_merge_genes.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/setup.py~",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/15_metawrap_classify_bins.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/coverage_bin45.txt",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/03_trimAL.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/02_hmmbuild.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/10_extract_contig_ID.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/06_assemble_metaspades_1TB.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/06_assemble_metaspades.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/13_metawrap_blobology.sh",
+		"/home/kalle/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/summary_macsyfinder.txt",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/coverage.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/Fangia_hongkongensis_FSC776_DSM_21703_pT4SSi_1.fasta",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/11_metawrap_binning.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/14_metawrap_reassemble_bins.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/python3_testenv.ipynb",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/06_assemble_metaspades_256GB.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/report.txt",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/summary_results.csv",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/09_gbf_contig_check.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/filter_report.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/trimAL_edited/dotA.mafft",
+		"/home/kalle/RESEARCH_BASE/JC/JC_curved_bacteria.md",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/models/DEF/LP_T4BSS.xml",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/trimAL_edited/icmB.mafft",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/06_extract_from_macsyreport.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Aeromonas_hydrophila_subsp_hydrophila_A.fna/macsyfinder.tab",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Aeromonas_hydrophila_subsp_hydrophila_A.fna/macsyfinder.summary",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Aeromonas_hydrophila_subsp_hydrophila_A.fna/macsyfinder.report",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/05_gene_extractor.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/new.txt",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/report.txt",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/summary_results.csv",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Acidithiobacillus_ferrivorans_SS3.fna/macsyfinder.report",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Acidithiobacillus_ferrivorans_SS3.fna/macsyfinder.summary",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Acidithiobacillus_ferrivorans_SS3.fna/macsyfinder.tab",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Acidithiobacillus_ferrivorans_SS3.fna/macsyfinder.log",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Acidithiobacillus_ferrivorans_SS3.fna/macsyfinder.out",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Acidithiobacillus_ferrivorans_SS3.fna/macsyfinder.conf",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Fluoribacter_bozemanae_WIGA.fna/macsyfinder.report",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Fluoribacter_bozemanae_WIGA.fna/macsyfinder.summary",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Fluoribacter_bozemanae_WIGA.fna/macsyfinder.out",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Fluoribacter_bozemanae_WIGA.fna/macsyfinder.tab",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/quast/report.html",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/04_processMacsy.sh",
+		"/home/kalle/RESEARCH_BASE/JC/JC_spandrels.md",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/processMacsy.sh",
+		"/tmp/kite_tutorial.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/04_BMGE_BLOSSUM30_S-YES.sh",
+		"/home/kalle/RESEARCH_BASE/awk_workshop/to-awk-or-not/notes.md",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/models/DEF/LP_T4BSS_multi_loci.xml",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Acidithiobacillus_ferrivorans_SS3.fna/results.macsyfinder.json",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Aeromonas_hydrophila_subsp_hydrophila_A.fna/results.macsyfinder.json",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/Alcanivorax_dieselolei_B5.fna/results.macsyfinder.json",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/l_pneumophila_paris_multi_loci_LP_T4BSS_multi_loci/hmmer_results/icmS.res_hmm_extract",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/01.1_macsyfinder_ml.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/05_prokka_bacteria_default.sh",
+		"/home/kalle/RESEARCH_BASE/ACN_LIST",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/l_pneumophila_paris_scrambled_multi_loci_icmJ_LP_T4BSS_multi_loci/macsyfinder.out",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/Data/Conjugation/README.md",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/models/DEF/CONJ.xml",
+		"/home/kalle/RESEARCH_BASE/genomes/legionella/pneumophila/cropped/scrambled_lp.faa",
+		"/home/kalle/RESEARCH_BASE/genomes/legionella/pneumophila/cropped/Legionella_pneumophila_subsp_pneumophil_1_CROPPED.faa",
+		"/home/kalle/RESEARCH_BASE/icmB.faa",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/macsyfinder/l_pneumophila_paris_scrambled_multi_loci_icmJ_LP_T4BSS_multi_loci/macsyfinder.log",
+		"/home/kalle/macsyfinder-1.0.5/macsypy/search_systems.py",
+		"/home/kalle/macsyfinder-1.0.5/macsypy/gene.py",
+		"/home/kalle/macsyfinder-1.0.5/macsypy/gene.py.py",
+		"/home/kalle/macsyfinder-1.0.5/macsypy/ge.py",
+		"/home/kalle/macsyfinder-1.0.5/macsypy/search_genes.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/.ipynb_checkpoints/Untitled-checkpoint.ipynb",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/models/DEF/dotIcmFHongkongensis.xml",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/models/DEF/PT4SSi.xml",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/trimAL_edited/icmR.mafft",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/trimAL_edited/icmS.mafft",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/trimAL_edited/icmT.mafft",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/trimAL_edited/icmG.mafft",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/Data/TXSS/DEF/pT4SSi.xml",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/models/HMM/BMGE_edited/dotD.hmm",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/models/HMM/BMGE_edited/dotA.hmm",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/models/DEF/dotIcmLPnemophila.xml",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/Data/Conjugation/DEF/typeT.xml",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/Data/Conjugation/Screenshot_spot_ICE.png",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/03_BMGE.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/Data/doSearchDotIcm.sh",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/trimAL_edited/dotA",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/man_edited/dotC.mafft",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/edited/icmF.mafft",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/alignments/dotIcmPhylo/edited/icmH.mafft",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/scripts/02_word_presence.py",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/models/dotA.hmm",
+		"/home/kalle/RESEARCH_BASE/legionella_franci_branching/legio_franc_mt/protein_models/README.md",
+		"/home/kalle/RESEARCH_BASE/research_training_19/scripts/12_raxml_protgammaf.sh",
+		"/home/kalle/RESEARCH_BASE/research_training_19/scripts/15_quick_raxml_protgammawagf.sh",
+		"/home/kalle/RESEARCH_BASE/research_training_19/scripts/14_raxml_bootrstap_extraction.sh",
+		"/home/kalle/RESEARCH_BASE/research_training_19/scripts/04_handling_blast_out.py",
+		"/home/kalle/RESEARCH_BASE/research_training_19/scripts/06_ACN_to_taxID.sh",
+		"/home/kalle/RESEARCH_BASE/research_training_19/scripts/07_extract_novel_taxa.py",
+		"/usr/share/cinnamon/cinnamon-settings/bin/imtools.py",
+		"/home/kalle/RESEARCH_BASE/research_training_19/scripts/13_raxml_consensus_tree.sh",
+		"/home/kalle/RESEARCH_BASE/research_training_19/phylogeny/RAxML_info.novel-crypton_repbase020919",
+		"/home/kalle/RESEARCH_BASE/research_training_19/phylogeny/RAxML_bootstrap.novel-crypton_repbase020919",
+		"/home/kalle/RESEARCH_BASE/research_training_19/scripts/02_tblastn_nt_v1.sh",
+		"/home/kalle/RESEARCH_BASE/research_training_19/notes/lab_notes.md",
+		"/home/kalle/RESEARCH_BASE/research_training_19/repbase_020919/raw/nucl/Repbase_Crypton_titles_FASTA_20190902.txt",
+		"/home/kalle/RESEARCH_BASE/research_training_19/alignments/aa_alignment/repbase020919-cryptons_novelCryptV.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/crypton_sequences/consensus_sequences/cds/CryptonH_repbase020919_short.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/crypton_sequences/consensus_sequences/cds/novel_CryptonV.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/crypton_sequences/consensus_sequences/cds/CryptonI_repbase020919_short.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/crypton_sequences/consensus_sequences/cds/CryptonS_repbase020919_short.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/crypton_sequences/consensus_sequences/cds/compiled_crypton_repbase020919.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/alignments/aa_alignment/general_Crypton_alignment_novelCryptV.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/crypton_sequences/consensus_sequences/cds/CryptonF_repbase020919_short.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/crypton_sequences/consensus_sequences/cds/CryptonV_repbase020919_short.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/crypton_sequences/consensus_sequences/cds/CryptonA_repbase020919.fa",
+		"/home/kalle/RESEARCH_BASE/research_training_19/crypton_sequences/consensus_sequences/cds/CryptonA_repbase020919_short.fa"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 349.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$OUTDIR$SUFFIX",
+			"-20",
+			"$4",
+			"intergene",
+			"position"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 119.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "file3.bed.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ush",
+				"legio_franc_mt/macsyfinder/l_pneumophila_paris_multi_loci_LP_T4BSS_multi_loci/hmmer_results/icmS.res_hmm_extract"
+			],
+			[
+				"",
+				"~/Molecular_Evolution/Karl_Nyren_Project_Plan.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 90.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 574.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
