@@ -18,22 +18,22 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
 @click.command(context_settings=CONTEXT_SETTINGS, no_args_is_help=True)
 @click.option(
-        '-i',
-        '--input-file',
-        type=click.File(mode='r'),
-        help='Input coverage file from the software sambamba depth \
+    '-i',
+    '--input-file',
+    type=click.File(mode='r'),
+    help='Input coverage file from the software sambamba depth \
                 (https://lomereiter.github.io/sambamba/)')
 @click.option(
-        '-o',
-        '--out-path',
-        default=os.getcwd(),
-        type=click.Path(exists=True),
-        help='Specify out directory path, default = current directory.')
+    '-o',
+    '--out-path',
+    default=os.getcwd(),
+    type=click.Path(exists=True),
+    help='Specify out directory path, default = current directory.')
 @click.option(
-        '-bins',
-        type=click.INT,
-        default=50,
-        help='Specify size of bins for histogram, default=50\n NOTE: Increasing \
+    '-bins',
+    type=click.INT,
+    default=50,
+    help='Specify size of bins for histogram, default=50\n NOTE: Increasing \
         number drastically will increase computation time')
 def plot_coverage(input_file, out_path, bins):
     '''Plots both normalized and non-normalized coverage data gathered from
@@ -46,6 +46,7 @@ def plot_coverage(input_file, out_path, bins):
 class CovData:
     '''Class to hold coverage data extracted'''
     # replace arrays with numpy arrays, speeds up the creation of avg_cov_data
+
     def __init__(self, input_file, out_path, bins):
         '''Initialize coverage data object'''
         self.input_file = input_file
@@ -61,12 +62,12 @@ class CovData:
         self.bins = bins
 
     def cov_file_parser(self):
-        '''Parse coverage data, return pandas of regular and normalized data''' 
+        '''Parse coverage data, return pandas of regular and normalized data'''
         for line in self.input_file:
             tmp_line = line.lower().split('\t')
             if '#' in line:
                 check_header(line)
-                self.cov_idx = tmp_line.index('meancoverage') 
+                self.cov_idx = tmp_line.index('meancoverage')
             elif self.cov_idx:
                 try:
                     data = float(tmp_line[self.cov_idx])
@@ -75,7 +76,7 @@ class CovData:
                     self.cov_counter += data
                 except ValueError:
                     print(f'Row {self.entry_counter} contains string and not a number, omitting...')
-        
+
         # Calculating average coverage
         self.avg_cov = self.cov_counter / self.entry_counter
         self.avg_cov_data = [number / self.avg_cov for number in self.cov_data]
@@ -93,8 +94,8 @@ class CovData:
         ax[1].axvline(100 / self.avg_cov, color='r', label='100X coverage')
         handles_0, _0 = ax[0].get_legend_handles_labels()
         handles_1, _1 = ax[1].get_legend_handles_labels()
-        ax[0].legend(handles = handles_0)
-        ax[1].legend(handles = handles_1)
+        ax[0].legend(handles=handles_0)
+        ax[1].legend(handles=handles_1)
         sns.distplot(
             self.df['Coverage'],
             ax=ax[0],
@@ -110,6 +111,7 @@ class CovData:
             bins=self.bins
         )
         fig.savefig(f'{self.out_path}/coverage.png')
+
 
 def check_header(header):
     '''Checks header in sambamba output. Looks for "meanCoverage" in header'''
