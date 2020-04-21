@@ -9,6 +9,7 @@ import click
 
 
 # TO DO:
+# Replace arrays with numpy arrays, speeds up the creation of avg_cov_data
 # Extras
 # Include read file from zip format
 # Check that regions hit are unique.
@@ -45,7 +46,6 @@ def plot_coverage(input_file, out_path, bins):
 
 class CovData:
     '''Class to hold coverage data extracted'''
-    # replace arrays with numpy arrays, speeds up the creation of avg_cov_data
 
     def __init__(self, input_file, out_path, bins):
         '''Initialize coverage data object'''
@@ -55,8 +55,8 @@ class CovData:
         self.cov_counter = float()
         self.avg_cov = float()
         self.cov_idx = int()
-        self.cov_data = []
-        self.avg_cov_data = []
+        self.cov_data = [] # replace arrays with numpy arrays, speeds up the creation of avg_cov_data
+        self.avg_cov_data = [] # replace arrays with numpy arrays, speeds up the creation of avg_cov_data
         self.df = pd.DataFrame(dtype=float)
         self.n_df = pd.DataFrame(dtype=float)
         self.bins = bins
@@ -87,11 +87,12 @@ class CovData:
     def plot(self):
         '''Plot coverage data, red line indicates 100X coverage'''
         fig_dims = (12, 7)
+        label = '100X coverage'
         fig, ax = plt.subplots(ncols=2, figsize=fig_dims)
         ax[0].set(ylabel='Frequency')
         ax[1].set(ylabel='Frequency')
-        ax[0].axvline(100, color='r', label='100X coverage')
-        ax[1].axvline(100 / self.avg_cov, color='r', label='100X coverage')
+        ax[0].axvline(100, color='r', label=label)
+        ax[1].axvline(100 / self.avg_cov, color='r', label=label)
         handles_0, _0 = ax[0].get_legend_handles_labels()
         handles_1, _1 = ax[1].get_legend_handles_labels()
         ax[0].legend(handles=handles_0)
