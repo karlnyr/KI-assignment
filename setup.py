@@ -11,8 +11,7 @@ setup(
         'Click',
         'seaborn',
         'pandas',
-        'subprocess'
-    ],
+        ],
     entry_points='''
             [console_scripts]
             plot_coverage=plot_coverage:plot_coverage

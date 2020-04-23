@@ -1,6 +1,7 @@
 import pytest
-import plot_coverage
+import click
 
+from plot_coverage import *
 from click import ClickException
 from click.testing import CliRunner
 
@@ -12,7 +13,10 @@ def runner():
     return runner
 
 def test_help_configure(runner):
-    results = runner.invoke(plot_coverage,['-h'])
+    results = runner.invoke(
+            plot_coverage,
+            '-h',
+            catch_exceptions=False)
     
     # Should have 0 exit status and show help
     assert results.exit_code == 0 

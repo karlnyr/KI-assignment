@@ -1,14 +1,12 @@
 import os
-import math
-import sys
-import traceback
+import click
 
 import subprocess as sp
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.lines as lines
-import click
+
 
 
 class CovData:
@@ -42,11 +40,7 @@ class CovData:
             )
         except ValueError as ve:
             raise ValueError(ve)
-#            exc_info = sys.exc_info()
-#            traceback.print_exception(*exc_info)
-#            del exc_info
-#            sys.exit('\nMake sure that input file contains column "meanCoverage" and is not compressed')
-        # For clarity, creating a normalized data frame for plotting
+       # For clarity, creating a normalized data frame for plotting
         self.avg_cov = self.df[self.columns[0]].sum() / self.df.shape[0]
         self.n_df = pd.DataFrame(self.df[self.columns[0]].divide(self.avg_cov), columns=['meanCoverage'])
 
