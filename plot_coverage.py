@@ -1,23 +1,28 @@
 import os
 import math
 import sys
+import traceback
 
+import subprocess as sp
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.lines as lines
 import click
 
-# Extras
-# Include read file from zip format
-
 
 class CovData:
     '''Class to hold coverage data extracted'''
 
-    def __init__(self, input_file, out_path, bins):
+    def __init__(self, input_file, out_path, bins, prefix):
         '''Initialize coverage data object'''
         self.input_file = input_file
+        if prefix == '':
+            self.prefix = sp.run(
+                ['basename', input_file],
+                stdout=sp.PIPE).stdout.decode('utf-8').strip()
+        else:
+            self.prefix = prefix
         self.out_path = out_path
         self.df = ''
         self.n_df = ''
@@ -26,7 +31,8 @@ class CovData:
         self.columns = ['meanCoverage']
 
     def cov_file_parser(self):
-        '''Parse coverage data, return pandas of regular and normalized data'''
+        '''Parse coverage data, set pandas of regular and normalized data'''
+        print(self.input_file)
         try:
             self.df = pd.read_csv(
                 self.input_file,
@@ -34,9 +40,12 @@ class CovData:
                 header=0,
                 usecols=self.columns
             )
-        except ValueError as e:
-            sys.exit(e)
-
+        except ValueError as ve:
+            exc_info = sys.exc_info()
+            traceback.print_exception(*exc_info)
+            del exc_info
+            sys.exit('\nMake sure that input file contains column "meanCoverage" and is not compressed')
+        # For clarity, creating a normalized data frame for plotting
         self.avg_cov = self.df[self.columns[0]].sum() / self.df.shape[0]
         self.n_df = pd.DataFrame(self.df[self.columns[0]].divide(self.avg_cov), columns=['meanCoverage'])
 
@@ -67,7 +76,7 @@ class CovData:
         )
         ax[0].set_xlabel('Coverage')
         ax[1].set_xlabel('Normalized Coverage')
-        fig.savefig(f'{self.out_path}/coverage.png')
+        fig.savefig(f'{self.out_path}/{self.prefix}_coverage.png')
 
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
@@ -77,7 +86,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 @click.option(
     '-i',
     '--input-file',
-    type=click.File(mode='r'),
+    type=click.Path(exists=True),  # Using path instead of File due to codecs skipping byte
     help='Input coverage file from the software sambamba depth \
                 (https://lomereiter.github.io/sambamba/)')
 @click.option(
@@ -87,14 +96,20 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
     type=click.Path(exists=True),
     help='Specify out directory path, default = current directory.')
 @click.option(
+    '-p',
+    '--prefix',
+    default='',
+    type=click.STRING,
+    help='Specify prefix on output, default = file_name')
+@click.option(
     '-bins',
     type=click.INT,
     default=50,
     help='Specify size of bins for histogram, default=50\n NOTE: Increasing \
         number drastically will increase computation time')
-def plot_coverage(input_file, out_path, bins):
+def plot_coverage(input_file, out_path, bins, prefix):
     '''Plots both normalized and non-normalized coverage data gathered from
     sambamba depth. Red line in output indicates 100X coverage.'''
-    coverage_data = CovData(input_file, out_path, bins)
+    coverage_data = CovData(input_file, out_path, bins, prefix)
     coverage_data.cov_file_parser()
     coverage_data.plot()

@@ -11,6 +11,7 @@ setup(
         'Click',
         'seaborn',
         'pandas',
+        'subprocess'
     ],
     entry_points='''
             [console_scripts]
