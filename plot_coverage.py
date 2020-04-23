@@ -14,7 +14,7 @@ import click
 class CovData:
     '''Class to hold coverage data extracted'''
 
-    def __init__(self, input_file, out_path, bins, prefix):
+    def __init__(self, input_file, out_path, bins, prefix, dryrun):
         '''Initialize coverage data object'''
         self.input_file = input_file
         if prefix == '':
@@ -29,10 +29,10 @@ class CovData:
         self.avg_cov = float()
         self.bins = bins
         self.columns = ['meanCoverage']
+        self.dryrun = dryrun
 
     def cov_file_parser(self):
         '''Parse coverage data, set pandas of regular and normalized data'''
-        print(self.input_file)
         try:
             self.df = pd.read_csv(
                 self.input_file,
@@ -41,10 +41,11 @@ class CovData:
                 usecols=self.columns
             )
         except ValueError as ve:
-            exc_info = sys.exc_info()
-            traceback.print_exception(*exc_info)
-            del exc_info
-            sys.exit('\nMake sure that input file contains column "meanCoverage" and is not compressed')
+            raise ValueError(ve)
+#            exc_info = sys.exc_info()
+#            traceback.print_exception(*exc_info)
+#            del exc_info
+#            sys.exit('\nMake sure that input file contains column "meanCoverage" and is not compressed')
         # For clarity, creating a normalized data frame for plotting
         self.avg_cov = self.df[self.columns[0]].sum() / self.df.shape[0]
         self.n_df = pd.DataFrame(self.df[self.columns[0]].divide(self.avg_cov), columns=['meanCoverage'])
@@ -76,7 +77,8 @@ class CovData:
         )
         ax[0].set_xlabel('Coverage')
         ax[1].set_xlabel('Normalized Coverage')
-        fig.savefig(f'{self.out_path}/{self.prefix}_coverage.png')
+        if not self.dryrun:
+            fig.savefig(f'{self.out_path}/{self.prefix}_coverage.png')
 
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
@@ -102,14 +104,20 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
     type=click.STRING,
     help='Specify prefix on output, default = file_name')
 @click.option(
-    '-bins',
+    '--bins',
     type=click.INT,
     default=50,
     help='Specify size of bins for histogram, default=50\n NOTE: Increasing \
         number drastically will increase computation time')
-def plot_coverage(input_file, out_path, bins, prefix):
+@click.option(
+        '--dryrun',
+        is_flag=True,
+        help='Will test functionality of plot_coverage, will not save a figure in the end')
+def plot_coverage(input_file, out_path, bins, prefix, dryrun):
     '''Plots both normalized and non-normalized coverage data gathered from
     sambamba depth. Red line in output indicates 100X coverage.'''
-    coverage_data = CovData(input_file, out_path, bins, prefix)
+    coverage_data = CovData(input_file, out_path, bins, prefix, dryrun)
     coverage_data.cov_file_parser()
     coverage_data.plot()
+    if coverage_data.dryrun:
+        print('Successfully ran plot_coverage!')
