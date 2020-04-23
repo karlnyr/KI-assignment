@@ -11,6 +11,7 @@ import click
 # Extras
 # Include read file from zip format
 
+
 class CovData:
     '''Class to hold coverage data extracted'''
 
@@ -22,22 +23,22 @@ class CovData:
         self.n_df = ''
         self.avg_cov = float()
         self.bins = bins
-        self.columns = ['meanCoverage'] 
+        self.columns = ['meanCoverage']
 
     def cov_file_parser(self):
         '''Parse coverage data, return pandas of regular and normalized data'''
         try:
             self.df = pd.read_csv(
-                    self.input_file,
-                    delimiter='\t',
-                    header=0,
-                    usecols=self.columns
-                    )
+                self.input_file,
+                delimiter='\t',
+                header=0,
+                usecols=self.columns
+            )
         except ValueError as e:
             sys.exit(e)
 
         self.avg_cov = self.df[self.columns[0]].sum() / self.df.shape[0]
-        self.n_df = pd.DataFrame(self.df[self.columns[0]].divide(self.avg_cov),columns=['meanCoverage'])
+        self.n_df = pd.DataFrame(self.df[self.columns[0]].divide(self.avg_cov), columns=['meanCoverage'])
 
     def plot(self):
         '''Plot coverage data, red line indicates 100X coverage'''
@@ -69,8 +70,8 @@ class CovData:
         fig.savefig(f'{self.out_path}/coverage.png')
 
 
-
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
+
 
 @click.command(context_settings=CONTEXT_SETTINGS, no_args_is_help=True)
 @click.option(
@@ -97,6 +98,3 @@ def plot_coverage(input_file, out_path, bins):
     coverage_data = CovData(input_file, out_path, bins)
     coverage_data.cov_file_parser()
     coverage_data.plot()
-
-
-
