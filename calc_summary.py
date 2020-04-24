@@ -21,4 +21,11 @@ def calc_summary(input_files):
         result = sp.run(['./bash_commands.sh', 'calc_summary', file],
                         stdout=sp.PIPE).stdout.decode('utf-8').strip().split('\n')
         results.append(result)
-    print(results)
+
+    for file, result in zip(input_files, results):
+        print(
+            f'Report for file: {file}\n'
+            f'# of features: {result[0]}\n'
+            f'Tot # non-overlapping bases covered by features: {result[1]}\n'
+            f'Longest feature: {result[2]}\n'
+        )

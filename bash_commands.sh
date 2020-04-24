@@ -10,9 +10,7 @@ then
     # The number of features in each file
     groupBy -i <(sort -k1,1 -k2,2n -k3,3n $INPUT_FILE_1) -c 1 -ops count | wc -l
     # The total number of, non-overlapping, bases covered by the features
-    # If this means total number of non-redundant bases in features:
-    # mergeBed -i <(sort -k1,1 -k2,2n file1.bed) | awk -F '\t' '$2 ~ /^[0-9]+$/ && $3 ~ /^[0-9]+$/ {s+=$3-($2+1)} END {print s}'
-    bedtools spacing -i <(sort -k1,1 -k2,2n $INPUT_FILE_1) | awk -F '\t' '$NF ~ /^[0-9]+$/ {s+=$NF} END {print s}'
+    mergeBed -i <(sort -k1,1 -k2,2n $INPUT_FILE_1) | awk -F '\t' '$2 ~ /^[0-9]+$/ && $3 ~ /^[0-9]+$/ {s+=$3-($2+1)} END {print s}'
     # The length and the name of the longest feature in file. Add +1 to counter 1 vs 0 indexing
     awk -F '\t' '$2 ~ /^[0-9]+$/ && $3 ~ /^[0-9]+$/ {print $4,$3-($2+1)}' $INPUT_FILE_1 | sort -k2,2n | tail -n 1
 elif [ "$CONF" == "feature_overlap" ]

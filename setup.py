@@ -16,8 +16,8 @@ setup(
         ],
     entry_points='''
             [console_scripts]
-            plot_coverage=plot_coverage:plot_coverage
-            feature_overlap=feature_overlap:feature_overlap
-            calc_summary=calc_summary:calc_summary
+            plotCoverage=plot_coverage:plot_coverage
+            featureOverlap=feature_overlap:feature_overlap
+            calcSummary=calc_summary:calc_summary
         ''',
 )

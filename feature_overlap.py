@@ -25,7 +25,9 @@ def feature_overlap(cutoff, input_files):
     results = []
     for p in combinations(input_files, 2):
         result = sp.run(['./bash_commands.sh', 'feature_overlap', p[0], p[1], str(cutoff)],
-                        stdout=sp.PIPE).stdout.decode('utf-8').strip().split('\n')
+                        stdout=sp.PIPE).stdout.decode('utf-8').strip()
         results.append(result)
-    for item in results:
-        print(item)
+    for comp, result in zip(combinations(input_files, 2), results):
+        print(
+            f'Searching overlapping features in: {comp[0]}, {comp[1]}\n'
+            f'# overlapping features (min overlap={cutoff}): {result}\n')
