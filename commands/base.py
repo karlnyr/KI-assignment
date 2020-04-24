@@ -20,7 +20,8 @@ def cli(ctx, debug):
     "ki-assignment"
     ctx.ensure_object(dict)
     ctx.obj['DEBUG'] = debug
-    ctx.obj['bash_path'] = bash_path
+    if not 'DEBUG':
+        ctx.obj['bash_path'] = bash_path
 
 
 cli.add_command(calcSummary, name='calcSummary')
