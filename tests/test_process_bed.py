@@ -18,7 +18,7 @@ def runner():
 def test_feature_overlap(runner):
     results = runner.invoke(
         kia,
-        'featureOverlap -i tests/process_bed/happy_file.bed tests/process_bed/happy_file.bed')
+        '--debug featureOverlap -i tests/process_bed/happy_file.bed tests/process_bed/happy_file.bed')
 
     assert results.exit_code == 0
 
