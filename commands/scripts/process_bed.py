@@ -107,7 +107,7 @@ def feature_overlap(ctx, hard_path, cutoff, input_files):
 
     results = []
     for p in combinations(input_files, 2):
-        if ctx.obj['DEBUG']
+        if ctx.obj['DEBUG']:
             result = run(
                 [hard_path, 'feature_overlap', p[0], p[1], str(cutoff)],
                 stdout=PIPE,
