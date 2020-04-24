@@ -69,7 +69,7 @@ def calc_summary(ctx, input_files):
     cls=OptionEatAll,
     help='Specify input, same BED-format, file(s). Accepts wildcard "*"')
 @click.pass_context
-def feature_overlap(ctx, hard_path, cutoff, input_files):
+def feature_overlap(ctx, cutoff, input_files):
     '''Calculates the number of overlapping sequences in BED files. Accepts
     more than two files, will calculate overlaps between all possible
     combinations. Input files are expected to be formated such as:

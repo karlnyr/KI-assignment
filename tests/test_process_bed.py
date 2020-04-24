@@ -26,7 +26,7 @@ def test_feature_overlap(runner):
 def test_calc_summary(runner):
     results = runner.invoke(
         kia,
-        'calcSummary -i tests/process_bed/happy_file.bed')
+        '--debug calcSummary -i tests/process_bed/happy_file.bed')
 
     assert results.exit_code == 0
 
