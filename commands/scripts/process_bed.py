@@ -8,8 +8,6 @@ from subprocess import run, PIPE
 from commands.opts.option_classes import OptionEatAll
 from itertools import combinations
 
-hard_path = '/home/travis/build/karlnyr/KI-assignment/commands/scripts/bash_commands.sh'
-
 
 @click.command(no_args_is_help=True)
 @click.option(
@@ -18,7 +16,7 @@ hard_path = '/home/travis/build/karlnyr/KI-assignment/commands/scripts/bash_comm
     cls=OptionEatAll,
     help='Specify input, same BED-format, file(s). Accepts wildcard "*"')
 @click.pass_context
-def calc_summary(ctx, hard_path, input_files):
+def calc_summary(ctx, input_files):
     '''Compose a report for input files, of BED format.
 
     Report for file: # of features, Tot # non-overlapping bases covered by
@@ -42,20 +40,12 @@ def calc_summary(ctx, hard_path, input_files):
 
     results = []
     for file in input_files:
-        if ctx.obj['DEBUG']:
-            result = run(
-                [hard_path, 'calc_summary', file],
-                stdout=PIPE,
-                stderr=PIPE,
-                universal_newlines=True).stdout.strip().split('\n')
-            results.append(result)
-        else:
-            result = run(
-                [ctx.obj['bash_path'], 'calc_summary', file],
-                stdout=PIPE,
-                stderr=PIPE,
-                universal_newlines=True).stdout.strip().split('\n')
-            results.append(result)
+        result = run(
+            [ctx.obj['bash_path'], 'calc_summary', file],
+            stdout=PIPE,
+            stderr=PIPE,
+            universal_newlines=True).stdout.strip().split('\n')
+        results.append(result)
 
     for file, result in zip(input_files, results):
         click.echo(
@@ -107,20 +97,12 @@ def feature_overlap(ctx, hard_path, cutoff, input_files):
 
     results = []
     for p in combinations(input_files, 2):
-        if ctx.obj['DEBUG']:
-            result = run(
-                [hard_path, 'feature_overlap', p[0], p[1], str(cutoff)],
-                stdout=PIPE,
-                stderr=PIPE,
-                universal_newlines=True)
-            results.append(result.stdout)
-        else:
-            result = run(
-                [ctx.obj['bash_path'], 'feature_overlap', p[0], p[1], str(cutoff)],
-                stdout=PIPE,
-                stderr=PIPE,
-                universal_newlines=True)
-            results.append(result.stdout)
+        result = run(
+            [ctx.obj['bash_path'], 'feature_overlap', p[0], p[1], str(cutoff)],
+            stdout=PIPE,
+            stderr=PIPE,
+            universal_newlines=True)
+        results.append(result.stdout)
 
     for comp, result in zip(combinations(input_files, 2), results):
         click.echo(

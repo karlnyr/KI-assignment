@@ -8,6 +8,8 @@ from commands.scripts.plot_coverage import plot_coverage as plotCoverage
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 bash_path = os.path.join(dir_path, 'scripts/bash_commands.sh')
+# Ugly solution for current bas command issue
+hard_path = '/home/travis/build/karlnyr/KI-assignment/commands/scripts/bash_commands.sh'
 
 
 @click.group()
@@ -20,7 +22,10 @@ def cli(ctx, debug):
     "ki-assignment"
     ctx.ensure_object(dict)
     ctx.obj['DEBUG'] = debug
-    ctx.obj['bash_path'] = bash_path
+    if debug:
+        ctx.obj['bash_path'] = hard_path
+    else:
+        ctx.obj['bash_path'] = bash_path
 
 
 cli.add_command(calcSummary, name='calcSummary')
