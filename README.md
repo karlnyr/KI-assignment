@@ -1,7 +1,7 @@
 # KI-assignment
 Assignments for job application at KI.
 
-Tested on Ubuntu xenial distribution.
+Tested on Ubuntu xenial distribution. Kia was developed using bedtools (v2.29.2)
 
 For easiest install, create virtual environment (conda, venv etc) for python 3.6
 ```shell
@@ -13,6 +13,10 @@ $ conda activate kia
 $ git clone https://github.com/karlnyr/KI-assignment.git
 $ cd KI-assignment
 $ pip install .
+
+# Instal bedtools
+$ sudo apt-get install -y bedtools
+# Call kia
 $ kia
 Usage: kia [OPTIONS] COMMAND [ARGS]...
 
