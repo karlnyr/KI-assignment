@@ -35,3 +35,6 @@ def test_check_format():
     # Detect empty, missing column and faulty start end
     files = ['empty_bed.bed', 'sad_file_mc.bed', 'sad_file_se.bed']
     dir_n = 'tests/process_bed'
+
+    for file in files:
+        assert (check_format(f'{dir_n}/{file}') == False)

@@ -130,8 +130,11 @@ def check_format(file):
         # The second one must be true
         assert (length[1])
         # Start and end are integers
-        assert int(lines[1][1])
-        assert int(lines[1][2])
+        try:
+            int(lines[1][1])
+            int(lines[1][2])
+        except ValueError as ve:
+            return False
     except AssertionError as e:
         print(e)
         return False
