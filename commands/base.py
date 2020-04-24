@@ -2,8 +2,7 @@ import click
 import os
 
 # Subcommands
-from commands.scripts.calc_summary import calc_summary as calcSummary
-from commands.scripts.feature_overlap import feature_overlap as featureOverlap
+from commands.scripts.process_bed import calc_summary as calcSummary, feature_overlap as featureOverlap
 from commands.scripts.plot_coverage import plot_coverage as plotCoverage
 
 
