@@ -11,7 +11,7 @@ cmds = {
         "calSum2": "mergeBed -i <(sort -k1,1 -k2,2n %s) | awk -F '\t' '$2 ~ /^[0-9]+$/ && $3 ~ /^[0-9]+$/ {s+=$3-($2+1)} END {print s}'",
         "calSum3": "awk -F '\t' '$2 ~ /^[0-9]+$/ && $3 ~ /^[0-9]+$/ {print $4,$3-($2+1)}' %s | sort -k2,2n | tail -n 1"
     },
-    "featOver": "intersectBed -wo -a $INPUT_FILE_1 -b $INPUT_FILE_2 | awk -v c=$CUTOFF -F '\t' '$NF > c {print $NF}' | wc -l"
+    "featOver": "intersectBed -wo -a %s -b %s | awk -v c=%s -F '\t' '$NF > c {print $NF}' | wc -l"
 }
 
 
