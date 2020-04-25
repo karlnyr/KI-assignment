@@ -5,11 +5,14 @@ import os
 from commands.scripts.process_bed import calc_summary as calcSummary, feature_overlap as featureOverlap
 from commands.scripts.plot_coverage import plot_coverage as plotCoverage
 
-
-dir_path = os.path.dirname(os.path.realpath(__file__))
-bash_path = os.path.join(dir_path, 'scripts/bash_commands.sh')
-# Ugly solution for current bas command issue
-hard_path = '/home/travis/build/karlnyr/KI-assignment/commands/scripts/bash_commands.sh'
+cmds = {
+    "calSum": {
+        "calSum1": "groupBy -i <(sort -k1,1 -k2,2n -k3,3n %s) -c 1 -ops count | wc -l",
+        "calSum2": "mergeBed -i <(sort -k1,1 -k2,2n %s) | awk -F '\t' '$2 ~ /^[0-9]+$/ && $3 ~ /^[0-9]+$/ {s+=$3-($2+1)} END {print s}'",
+        "calSum3": "awk -F '\t' '$2 ~ /^[0-9]+$/ && $3 ~ /^[0-9]+$/ {print $4,$3-($2+1)}' %s | sort -k2,2n | tail -n 1"
+    },
+    "featOver": "intersectBed -wo -a $INPUT_FILE_1 -b $INPUT_FILE_2 | awk -v c=$CUTOFF -F '\t' '$NF > c {print $NF}' | wc -l"
+}
 
 
 @click.group()
@@ -22,10 +25,7 @@ def cli(ctx, debug):
     "ki-assignment"
     ctx.ensure_object(dict)
     ctx.obj['DEBUG'] = debug
-    if debug:
-        ctx.obj['bash_path'] = hard_path
-    else:
-        ctx.obj['bash_path'] = bash_path
+    ctx.obj['CMDS'] = cmds
 
 
 cli.add_command(calcSummary, name='calcSummary')

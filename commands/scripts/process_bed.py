@@ -24,6 +24,7 @@ def calc_summary(ctx, input_files):
 
     Input files are expected to be formated such as:
     chromosome​ start  end​    name​, and have more than 1 entry'''
+    cmds = ctx.obj['CMDS']['calSum']
     for file in input_files:
         try:
             with open(file, 'r'):
@@ -40,12 +41,16 @@ def calc_summary(ctx, input_files):
 
     results = []
     for file in input_files:
-        result = run(
-            [ctx.obj['bash_path'], 'calc_summary', file],
-            stdout=PIPE,
-            stderr=PIPE,
-            universal_newlines=True).stdout.strip().split('\n')
-        results.append(result)
+        tmp_list = []
+        for cmd in cmds:
+            result = run(
+                cmds[cmd] % file,
+                shell=True,
+                stdout=PIPE,
+                stderr=PIPE,
+                universal_newlines=True).stdout.strip()
+            tmp_list.append(result)
+        results.append(tmp_list)
 
     for file, result in zip(input_files, results):
         click.echo(
@@ -74,6 +79,7 @@ def feature_overlap(ctx, cutoff, input_files):
     more than two files, will calculate overlaps between all possible
     combinations. Input files are expected to be formated such as:
     chromosome\tstart\tend​\tname​, and have more than 1 entry'''
+    cmd = ctx.obj['CMDS']['featOver']
     for file in input_files:
         try:
             with open(file, 'r'):
@@ -98,7 +104,8 @@ def feature_overlap(ctx, cutoff, input_files):
     results = []
     for p in combinations(input_files, 2):
         result = run(
-            [ctx.obj['bash_path'], 'feature_overlap', p[0], p[1], str(cutoff)],
+            cmd % (p[0], p[1], cutoff),
+            shell=True,
             stdout=PIPE,
             stderr=PIPE,
             universal_newlines=True)
